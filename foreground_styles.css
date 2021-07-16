@@ -1,0 +1,25 @@
+.main_container {
+    width: 20vw;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    position: absolute;
+    
+
+    background-color: aliceblue;
+    z-index: 10000;
+}
+
+#main_containerheader {
+    width: 20vw;
+    height: 20px;
+    background-color: blue;
+    cursor: move;
+
+}
+
+#goodNumber {
+    background-color: yellow;
+}
