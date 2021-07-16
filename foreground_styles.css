@@ -6,21 +6,24 @@
     justify-content: space-evenly;
     padding: 15px;
     position: absolute;
-    cursor: move;
+    
     
     
 
     background-color: aliceblue;
-    z-index: 10000;
+    z-index: 9999;
 }
 
 #main_containerheader {
-    width: 20vw;
+    
     height: 20px;
-    background-color: blue;
+    background-color: rgba(110, 110, 255, 0.753);
     cursor: move;
 
 
+}
+#contact_number{
+    z-index: 10000000;
 }
 
 #goodNumber {

@@ -13,12 +13,12 @@ contact_number.id = "contact_number";
 contact_number_type.id = "contact_number_type";
 moving_div.id = "main_containerheader";
 main_container.appendChild(moving_div);
-main_container.appendChild(property_name);
+moving_div.appendChild(property_name);
 main_container.appendChild(contact_name);
 main_container.appendChild(contact_number_type);
 main_container.appendChild(contact_number);
 
-property_name.innerHTML = 'this is a test';
+property_name.innerHTML = '123 main street';
 
 document.querySelector('body').insertBefore(main_container, document.body.firstChild);
 
@@ -57,13 +57,13 @@ dragElement(document.getElementById("main_container"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 200, pos3 = 0, pos4 = 0;
-  // if (document.getElementById(elmnt.id + "header")) {
-  //   /* if present, the header is where you move the DIV from:*/
-  //   document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  // } else {
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
     /* otherwise, move the DIV from anywhere inside the DIV:*/
     elmnt.onmousedown = dragMouseDown;
-  // }
+  }
 
   function dragMouseDown(e) {
     e = e || window.event;
